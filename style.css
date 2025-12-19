@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.controls input, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.floor-plan {
+  margin: 20px auto;
+  width: 600px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  background: white;
+  border: 4px solid black;
+}
+
+.room {
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hall { grid-column: 1 / 3; grid-row: 2 / 4; background: #e3f2fd; }
+.kitchen { grid-column: 3; grid-row: 1 / 2; background: #fff3e0; }
+.bed1 { grid-column: 1; grid-row: 1 / 2; background: #fce4ec; }
+.bed2 { grid-column: 3; grid-row: 3 / 4; background: #fce4ec; }
+.bed3 { grid-column: 2; grid-row: 4; background: #fce4ec; }
+.toilet { background: #e8f5e9; }
